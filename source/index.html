@@ -43,8 +43,8 @@
     <section class="hero">
       <ul class="hero__list">
         <li class="hero__item">
-          <h2 class="section__title hero__title">Новинка!</h2>
-          <p class="hero__name">Декаф Флэт Уайт</p>
+          <h2 class="hero__title">Новинка!</h2>
+          <h3 class="hero__name">Декаф Флэт Уайт</h3>
           <p class="hero__description">Свежесваренный кофе без кофеина 
             из Эфиопии с натуральным фермерским молоком — 
             то, что нужно для расслабления после тяжёлого рабочего дня</p>
@@ -53,8 +53,8 @@
             <button class="button hero__button"> Заказать</button>
         </li>
         <li class="hero__item">
-          <h2 class="section__title hero__title">Новинка!</h2>
-          <p class="hero__name">Лавандовый Латте</p>
+          <h2 class="hero__title">Новинка!</h2>
+          <h3 class="hero__name">Лавандовый Латте</h3>
           <p class="hero__description">Невероятное сочетание перуанской высокогорной арабики 
             с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
             <p class="hero__old-price">295₽</p>
@@ -62,8 +62,8 @@
             <button class="button hero__button"> Заказать</button>
         </li>
         <li class="hero__item">
-          <h2 class="section__title hero__title">Новинка!</h2>
-          <p class="hero__name">Тройной Эспрессо</p>
+          <h2 class="hero__title">Новинка!</h2>
+          <h3 class="hero__name">Тройной Эспрессо</h3>
           <p class="hero__description">Мощнее укола адреналина, чернее самой тёмной ночи, 
             этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
             <p class="hero__old-price">395₽</p>
@@ -73,7 +73,7 @@
       </ul>
     </section>
     <section class="advantages">
-      <h2 class="section__title advantages__title">Преимущества</h2>
+      <h2 class="advantages__title">Преимущества</h2>
       <h3 class="heading advantages__heading">Главные причины выбрать Drink2Go</h3>
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -95,7 +95,7 @@
       </ul>
     </section>
     <section class="catalog">
-      <h2 class="section__title catalog__title">Каталог</h2>
+      <h2 class="catalog__title">Каталог</h2>
       <h3 class="heading catalog__heading">Каталог кофейных напитков</h3>
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form__fieldset form-price price">
@@ -125,29 +125,29 @@
           <legend class="form__title form-milk__title">Цена</legend>
           <ul class="milk-form__list">
             <li class="milk-form__item">
-              <label class="form__field order-form__field">
-                <input class="order-form__field-control input " type="radio" value="Weight-loss" name="form__milk-group" checked>
+              <label class="form__field milk-form__field">
+                <input class="milk-form__field-control input " type="radio" value="Weight-loss" name="form__milk-group" checked>
                 <span class="input-radio"></span>
                 <span class="form__field-label milk-form-answer">Неважно</span>
               </label>
             </li>
             <li class="milk-form__item">
-              <label class="form__field order-form__field">
-                <input class="order-form__field-control input " type="radio" value="Mass-gain" name="form__milk-group">
+              <label class="form__field milk-form__field">
+                <input class="milk-form__field-control input " type="radio" value="Mass-gain" name="form__milk-group">
                 <span class="input-radio"></span>
                 <span class="form__field-label milk-form-answer">Только животное</span>
               </label>
             </li>
-            <li class="rmilk-form__item">
-              <label class="form__field order-form__field">
-                <input class="order-form__field-control input" type="radio" value="Need-advice" name="form__milk-group">
+            <li class="milk-form__item">
+              <label class="form__field milk-form__field">
+                <input class="milk-form__field-control input" type="radio" value="Need-advice" name="form__milk-group">
                 <span class="input-radio"></span>
                 <span class="form__field-label milk-form-answer">Только растительное</span>
               </label>
             </li>
-            <li class="rmilk-form__item">
-              <label class="form__field order-form__field">
-                <input class="order-form__field-control input " type="radio" value="Need-advice" name="form__milk-group">
+            <li class="milk-form__item">
+              <label class="form__field milk-form__field">
+                <input class="milk-form__field-control input " type="radio" value="Need-advice" name="form__milk-group">
                 <span class="input-radio"></span>
                 <span class="form__field-label milk-form-answer">Без молока</span>
               </label>
@@ -292,27 +292,29 @@
           </section>
         </li>
       </ul>
-      <ul class="pagination__list">
-        <li class="pagination__item">
-          <a class="button">
-            <span class="visually-hidden">Назад</span>
-          </a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link pagination-current">1</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link grey-button" href="#">2</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link grey-button" href="#">3</a>
-        </li>
-        <li class="pagination__item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Вперёд</span>
-          </a>
-        </li>
-      </ul>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="button">
+              <span class="visually-hidden">Назад</span>
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination-current">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link grey-button" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link grey-button" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Вперёд</span>
+            </a>
+          </li>
+        </ul>
+      </div>  
     </section>
     <iframe 
 
