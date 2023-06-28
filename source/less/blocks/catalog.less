@@ -1,3 +1,19 @@
 .catalog {
   background-color: #F8F8F8;
 }
+
+.catalog__list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
