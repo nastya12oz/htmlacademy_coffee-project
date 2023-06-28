@@ -1,5 +1,22 @@
 .main-header {
   display: flex;
-  justify-content: space-between;
   padding: 10px 15px;
+  align-items: center;
+}
+
+.main-header__logo-wrapper {
+  display: flex;
+  margin-right: 100px;
+}
+
+.main-header__text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    max-width: 146px;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 20px;
+  }
 }

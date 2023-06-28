@@ -10,10 +10,18 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="img/logo-mobile.svg" width="34" height="38"  alt="Логотип магазина Drink2Go.">
-    </a>
-    <nav class="main-nav">
+    <div class="main-header__logo-wrapper">
+      <a class="main-header__logo" href="#">
+        <!-- <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-big.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-short.svg">
+          <img class="main-header__logo-pic" src="img/logo/logo-icon.svg" width="34" height="38" alt="Логотип магазина Drink2Go.">
+        </picture> -->
+        <img class="main-header__logo-mobile" width="32" height="36" src="img/logo/logo-icon.svg" alt="Логотип магазина Drink2Go.">
+      </a>
+      <p class="main-header__text">Интернет-магазин кофейных напитков</p>
+    </div>  
+    <nav class="main-nav main-nav--closed">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -31,15 +39,13 @@
           <li class="main-nav__item">
             <a href="#">О нас</a>
           </li>
-          <li class="main-nav__item">
-            <a href="#">Профиль</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Корзина</a>
-          </li>
         </ul>
       </div>
     </nav>
+    <div class="main-header__profile">
+      <a class="main-header__profile" href="#">Войти</a>
+      <a class="main-nav__item" href="#">Корзина</a>
+    </div>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Магазин Drink2Go</h1>
@@ -218,84 +224,102 @@
             <section class="catalog__product product-card">
               <a class="product-card__link" href="#">
                 <picture class="product-card__image"></picture>
+                <img class="product-card__image" width="139" height="188" alt='' src="img/products/coffee-can-1-mobile.png" srcset="img/products/coffee-can-1-2x-mobile.png 2x">
                 <h4 class="product-card__title">Декаф Флэт Уайт</h4>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
-                <span class="product-card__price">225₽</span>
               </a>
-              <button class="button product-card__button" type="button">
-                <span>В корзину</span>
-              </button>
+              <div class="product-card__wrap">
+                <span class="product-card__price">225₽</span>
+                <button class="button product-card__button" type="button">
+                  <span>В корзину</span>
+                </button>
+              </div>
             </section>
           </li>
           <li class="catalog__item">
             <section class="catalog__product product-card">
               <a class="product-card__link" href="#">
+                <img class="product-card__image" width="139" height="188" alt='' src="img/products/coffee-can-2-mobile.png" srcset="img/products/coffee-can-2-2x-mobile.png 2x">
                 <picture class="product-card__image"></picture>
                 <h4 class="product-card__title">Декаф Флэт Уайт</h4>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
-                <span class="product-card__price">225₽</span>
               </a>
-              <button class="button product-card__button" type="button">
-                <span>В корзину</span>
-              </button>
+              <div class="product-card__wrap">
+                <span class="product-card__price">225₽</span>
+                <button class="button product-card__button" type="button">
+                  <span>В корзину</span>
+                </button>
+              </div>
             </section>
           </li>
           <li class="catalog__item">
             <section class="catalog__product product-card">
               <a class="product-card__link" href="#">
+                <img class="product-card__image" width="139" height="188" alt='' src="img/products/coffee-can-3-mobile.png" srcset="img/products/coffee-can-3-2x-mobile.png 2x">
                 <picture class="product-card__image"></picture>
                 <h4 class="product-card__title">Декаф Флэт Уайт</h4>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
-                <span class="product-card__price">225₽</span>
               </a>
-              <button class="button product-card__button" type="button">
-                <span>В корзину</span>
-              </button>
+              <div class="product-card__wrap">
+                <span class="product-card__price">225₽</span>
+                <button class="button product-card__button" type="button">
+                  <span>В корзину</span>
+                </button>
+              </div>
             </section>
           </li>
           <li class="catalog__item">
             <section class="catalog__product product-card">
               <a class="product-card__link" href="#">
+                <img class="product-card__image" width="139" height="188" alt='' src="img/products/coffee-can-4-mobile.png" srcset="img/products/coffee-can-4-2x-mobile.png 2x">
                 <picture class="product-card__image"></picture>
                 <h4 class="product-card__title">Декаф Флэт Уайт</h4>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
-                <span class="product-card__price">225₽</span>
               </a>
-              <button class="button product-card__button" type="button">
-                <span>В корзину</span>
-              </button>
+              <div class="product-card__wrap">
+                <span class="product-card__price">225₽</span>
+                <button class="button product-card__button" type="button">
+                  <span>В корзину</span>
+                </button>
+              </div>
             </section>
           </li>
           <li class="catalog__item">
             <section class="catalog__product product-card">
               <a class="product-card__link" href="#">
+                <img class="product-card__image" width="139" height="188" alt='' src="img/products/coffee-can-5-mobile.png" srcset="img/products/coffee-can-5-2x-mobile.png 2x">
                 <picture class="product-card__image"></picture>
                 <h4 class="product-card__title">Декаф Флэт Уайт</h4>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
-                <span class="product-card__price">225₽</span>
               </a>
-              <button class="button product-card__button" type="button">
-                <span>В корзину</span>
-              </button>
+              <div class="product-card__wrap">
+                <span class="product-card__price">225₽</span>
+                <button class="button product-card__button" type="button">
+                  <span>В корзину</span>
+                </button>
+              </div>
             </section>
           </li>
           <li class="catalog__item">
             <section class="catalog__product product-card">
               <a class="product-card__link" href="#">
+                <img class="product-card__image" width="139" height="188" alt='' src="img/products/coffee-can-6-mobile.png" srcset="img/products/coffee-can-6-2x-mobile.png 2x">
                 <picture class="product-card__image"></picture>
                 <h4 class="product-card__title">Декаф Флэт Уайт</h4>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
-                <span class="product-card__price">225₽</span>
               </a>
-              <button class="button product-card__button" type="button">
-                <span>В корзину</span>
-              </button>
+              <div class="product-card__wrap">
+                <span class="product-card__price">225₽</span>
+                <button class="button product-card__button" type="button">
+                  <span>В корзину</span>
+                </button>
+              </div>
             </section>
           </li>
         </ul>
