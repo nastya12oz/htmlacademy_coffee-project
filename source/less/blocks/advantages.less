@@ -1,5 +1,5 @@
 .advantages {
-  padding: 20px 60px;
+  padding: 50px 20px 60px;
   text-align: center;
 }
 
@@ -7,13 +7,60 @@
   display: grid;
   grid-template-columns: 1fr;
 
-
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    // row-gap: 30px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 80px;
+
+  &--speed::before {
+    position: absolute;
+    content: " ";
+    width: 52px;
+    height: 56px;
+    background-image: url("../../img/speed.svg");
+    background-repeat: no-repeat;
+    top: 15px; 
+    left: 41%;
+  }
+
+  &--fit::before {
+    position: absolute;
+    content: " ";
+    width: 52px;
+    height: 56px;
+    background-image: url("../../img/fit.svg");
+    background-repeat: no-repeat;
+    top: 15px; 
+    left: 41%;
+  }
+
+  &--energy::before {
+    position: absolute;
+    content: " ";
+    width: 52px;
+    height: 56px;
+    background-image: url("../../img/energy.svg");
+    background-repeat: no-repeat;
+    top: 15px; 
+    left: 41%;
+  }
+
+  &--ecology::before {
+    position: absolute;
+    content: " ";
+    width: 52px;
+    height: 56px;
+    background-image: url("../../img/ecology.svg");
+    background-repeat: no-repeat;
+    top: 15px; 
+    left: 41%;
   }
 }

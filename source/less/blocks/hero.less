@@ -1,6 +1,7 @@
 .hero {
   background-color: #F3EBE1;
   text-align: center;
+  padding: 20px 0 60px;
 }
 
 .hero__item {
@@ -15,4 +16,35 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
   }
+}
+
+.hero__buy {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hero__name {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero__description {
+  margin-bottom: 20px;
+}
+
+.hero__button {
+  padding: 8px 20px;
+  margin-left: 40px;
+}
+
+.hero__old-price {
+  text-decoration: line-through;
+  color: #7859CF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  margin-right: 6px;
 }
