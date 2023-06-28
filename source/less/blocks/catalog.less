@@ -15,5 +15,22 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+.catalog__wrap {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.catalog__title, .catalog__heading {
+  text-align: center;
+}
+
+.catalog-sort {
+  @media (min-width: @desktop-width) {
+    text-align: end;
   }
 }
