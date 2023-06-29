@@ -1,0 +1,98 @@
+.form__range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 6px;
+  margin-right: 20px;
+  background-color: #dcdcdc;
+}
+
+.form__range-bar {
+  position: absolute;
+  right: 50px;
+  height: 4px;
+  background-color: #9070EC;
+}
+
+.form__range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #FFF;
+  border: 2px solid #9070EC;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+
+  &::after {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    content: "";
+  }
+}
+
+.form__range-min {
+  top: -8px;
+  left: -6px;
+} 
+.form__range-max {
+  top: -8px;
+  right: -10px;
+}
+
+// .form__range-wrapper-inputs {
+//   display: flex;
+// }
+
+.form__range-input::-webkit-outer-spin-button,
+.form__range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.form__range-input {
+  background-color: transparent;
+  border: solid 2px #9070EC;
+  border-radius: 4px;
+  width: 118px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: inherit;
+  outline: none;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.form__range-input-min {
+  color: #BDBDBD;
+}
+
+.form__title {
+  margin-bottom: 20px;
+}
+
+.form__range-scale {
+  width: 100%;
+}
+
+.form__range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__fieldset {
+  display: block;
+  max-width: 280px;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}

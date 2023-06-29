@@ -1,0 +1,122 @@
+.input {
+  outline: solid 1px #e7e7e7;
+  border: none;
+
+  ~ .form-owner__icon--mail {
+    stroke: #222222;
+  }
+
+  &:hover {
+    outline-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: solid 2px #444444;
+    border: none;
+
+    ~ .form-owner__icon--mail {
+      stroke: #7859CF;
+    }
+
+    ~ .form-owner__icon--phone {
+      fill: #7859CF;
+    }
+  }
+
+  &:focus:invalid {
+    outline: solid 2px #ff8282;
+    border: none;
+
+    ~ .form-owner__icon--mail {
+      stroke: #ff8282;
+    }
+
+    ~ .form-owner__icon--phone {
+      fill: #ff8282;
+    }
+  }
+}
+
+.input-radio {
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: solid 2px #BDBDBD;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.input-checkbox {
+  display: inline-block;
+  border: 2px solid #7859CF;
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.input[type="radio"]:checked + .input-radio {
+  border-color: #7859CF;
+}
+
+
+.input[type="radio"]:checked + .input-radio::before {
+  position: absolute;
+  background-color: #7859CF;
+  border-radius: 50%;
+  content: "";
+
+  @media (max-width: @mobile-width-only) {
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: 2px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 10px;
+    top: 10px;
+  }
+}
+
+.input[type="checkbox"]:checked + .input-checkbox::before {
+  position: absolute;
+  content: url("../img/green-tick--mobile.svg");
+
+  @media (max-width: @mobile-width-only) {
+    top: 5px;
+    left: 3px;
+    width: 18px;
+    height: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 10px;
+    left: 5px;
+    width: 24px;
+    height: 18px;
+  }
+}
+
+.order-form__field-control:hover + .input-radio,
+.additional-form__control:hover + .input-checkbox {
+  border-color: #7859CF;
+}
+
+.order-form__field-control:disabled ~ span,
+.additional-form__control:disabled ~ span {
+  opacity: 0.3;
+}
+
+.order-form__field-control:focus + .input-radio,
+.additional-form__control:focus + .input-checkbox {
+  outline: solid 2px #444444;
+  border: none;
+}
