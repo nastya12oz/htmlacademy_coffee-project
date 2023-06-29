@@ -4,6 +4,10 @@
   padding-top: 40px;
   padding-bottom: 44px;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+  }
 }
 
 .pagination__item {
@@ -16,6 +20,12 @@
   &:not(:last-child) {
     margin-right: 20px;
   }
+
+  &--big {
+    @media (min-width: @tablet-width) {
+      width: 91px;
+    }
+  }
 }
 
 .pagination__link {
@@ -26,4 +36,14 @@
 .pagination-current {
   color: #333333;
   font-weight: 600;
+}
+
+.pagination__text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    background-color: #FFF;
+    color: #7859CF;
+  }
 }
