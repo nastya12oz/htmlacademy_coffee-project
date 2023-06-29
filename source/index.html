@@ -5,6 +5,10 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -54,12 +58,19 @@
       <div class="container">
         <ul class="hero__list">
           <li class="hero__item">
-            <img class="hero__image" width="280" height="280" alt='' src="img/hero/flat_white-mobile.png" srcset="img/hero/flat_white-2x-mobile.png 2x">
+            <picture class="hero__image">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/flat_white-desktop.webp 1x, img/hero/flat_white-2x-desktop.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/flat_white-tablet.webp 1x, img/hero/flat_white-2x-tablet.webp 2x">
+              <source type="image/webp" srcset="img/products/product_chicken_1000-phone.webp 1x, img/products/product_chicken_1000-phone@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="iimg/hero/flat_white-desktop.png 1x, img/hero/flat_white-2x-desktop.png 2x">
+              <source media="(min-width: 768px)" srcset="img/hero/flat_white-tablet.png 1x, img/hero/flat_white-2x-tablet.png 2x">
+              <img class="hero__image" width="280" height="280" alt='' src="img/hero/flat_white-mobile.png" srcset="img/hero/flat_white-2x-mobile.png 2x">
+            </picture>
             <div class="hero__information">
               <h2 class="hero__title page__title">Новинка!</h2>
               <h3 class="hero__name">Декаф Флэт Уайт</h3>
               <p class="hero__description">Свежесваренный кофе без кофеина 
-                из Эфиопии с натуральным фермерским молоком — 
+                из Эфиопии <br class="hero__indent">с натуральным фермерским молоком — 
                 то, что нужно для расслабления после тяжёлого рабочего дня</p>
                 <div class="hero__buy">
                   <p class="hero__old-price">295₽</p>
@@ -107,7 +118,7 @@
         </li>
         <li class="advantages__item advantages__item--ecology">
           <h4 class="advantages__item-heading">Экологичность</h4>
-          <p class="advantages__item-text">Вся упаковка сделана из перерабатываемых материалов</p>
+          <p class="advantages__item-text">Вся упаковка сделана<br>из перерабатываемых материалов</p>
         </li>
       </ul>
     </section>
@@ -334,9 +345,9 @@
         </div>  
         <div class="pagination">
           <ul class="pagination__list">
-            <li class="pagination__item">
+            <li class="pagination__item pagination__item--big">
               <a class="button">
-                <span class="visually-hidden">Назад</span>
+                <span class="pagination__text">Назад</span>
               </a>
             </li>
             <li class="pagination__item">
@@ -348,9 +359,9 @@
             <li class="pagination__item">
               <a class="pagination__link" href="#">3</a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item pagination__item--big">
               <a class="button" href="#">
-                <span class="visually-hidden">Вперёд</span>
+                <span class="pagination__text">Вперёд</span>
               </a>
             </li>
           </ul>

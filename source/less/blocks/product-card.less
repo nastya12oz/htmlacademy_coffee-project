@@ -6,14 +6,28 @@
   padding: 40px 20px 20px;
 
   @media (min-width: @tablet-width) {
-    min-width: 329px;
+    min-width: 349px;
     min-height: 440px;
     padding-top: 50px;
   }
 }
 
 .product-card__button {
-  padding: 8px 20px;
+  padding: 8px 20px 8px 46px;
+  position: relative;
+
+  &::before {
+    position: absolute; 
+    content: "";
+    width: 20px;
+    height: 16px;
+    background-image: url("../../img/basket-button.svg");
+    left: 20px;
+    top: 10px;
+  }
+}
+
+.product-card__button span {
   font-size: 14px;
 }
 
@@ -30,6 +44,11 @@
   line-height: 32px;
   text-align: start;
   margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .product-card__description {
