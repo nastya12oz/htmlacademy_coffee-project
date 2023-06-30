@@ -34,7 +34,34 @@
 }
 
 .catalog-sort {
-  @media (min-width: @desktop-width) {
+  display: flex;
+  margin-top: 36px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
     text-align: end;
+    justify-content: flex-end;
   }
+}
+
+.catalog-sort__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.catalog-sort__select-control {
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  text-align: center;
+  color: #7859CF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.catalog-sort__select-control option {
+  width: 163px;
+  height: 190px;
 }

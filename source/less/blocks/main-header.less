@@ -3,6 +3,10 @@
   padding: 10px 0;
   align-items: center;
 
+  @media (min-width: @tablet-width) {
+    align-items: baseline;
+  }
+
   @media (min-width: @desktop-width) {
     justify-content: space-between;
   }
@@ -23,4 +27,12 @@
     line-height: 16px;
     padding-left: 20px;
   }
+}
+
+.main-header__profile-user {
+  padding: 22px;
+}
+
+.main-header__profile-basket {
+  padding: 22px;
 }
