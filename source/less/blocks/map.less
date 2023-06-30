@@ -17,16 +17,14 @@
   }
 
   @media (min-width: @tablet-width) and (max-width: 1439px) {
-    @media (max-width: @mobile-width-only) {
       background-image: url("../../img/map/map-tablet.png");
   
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/map/map-2x-tablet.png");
       }
     }
-  }
 
-  @media (max-width: @mobile-width-only) {
+  @media (min-width: @desktop-width) {
     background-image: url("../../img/map/map-desktop.png");
 
     @media (min-resolution: 2dppx) {
