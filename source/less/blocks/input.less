@@ -1,42 +1,3 @@
-.input {
-  outline: solid 1px #e7e7e7;
-  border: none;
-
-  ~ .form-owner__icon--mail {
-    stroke: #222222;
-  }
-
-  &:hover {
-    outline-color: #cdcdcd;
-  }
-
-  &:focus {
-    outline: solid 2px #444444;
-    border: none;
-
-    ~ .form-owner__icon--mail {
-      stroke: #7859CF;
-    }
-
-    ~ .form-owner__icon--phone {
-      fill: #7859CF;
-    }
-  }
-
-  &:focus:invalid {
-    outline: solid 2px #ff8282;
-    border: none;
-
-    ~ .form-owner__icon--mail {
-      stroke: #ff8282;
-    }
-
-    ~ .form-owner__icon--phone {
-      fill: #ff8282;
-    }
-  }
-}
-
 .input-radio {
   display: inline-block;
   border-radius: 50%;
@@ -53,7 +14,6 @@
 
 .input-checkbox {
   display: inline-block;
-  // border: 2px solid #7859CF;
   background-color: #BDBDBD;
   width: 42px;
   height: 24px;
@@ -63,6 +23,10 @@
 
 .input[type="checkbox"]:checked + .input-checkbox {
   background-color: #7859CF;
+}
+
+.input-radio::hover + .input-radio::before {
+  background-color: tomato;
 }
 
 .input[type="radio"]:checked + .input-radio {
@@ -102,20 +66,4 @@
   height: 20px;
   top: 2px;
   left: 2px;
-}
-
-.order-form__field-control:hover + .input-radio,
-.additional-form__control:hover + .input-checkbox {
-  border-color: #7859CF;
-}
-
-.order-form__field-control:disabled ~ span,
-.additional-form__control:disabled ~ span {
-  opacity: 0.3;
-}
-
-.order-form__field-control:focus + .input-radio,
-.additional-form__control:focus + .input-checkbox {
-  outline: solid 2px #444444;
-  border: none;
 }
