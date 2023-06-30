@@ -11,6 +11,16 @@
   right: 50px;
   height: 4px;
   background-color: #9070EC;
+  left: 7px; 
+  width: 215px;
+
+  @media (min-width: @tablet-width) {
+    width: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 250px;
+  }
 }
 
 .price__range-toggle {
@@ -66,6 +76,10 @@
   outline: none;
   margin-top: 24px;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 87px;
+  }
 }
 
 .price__range-input-min {
@@ -81,4 +95,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.price-max {
+  @media (min-width: @tablet-width) {
+    margin-left: 48px;
+  }
+}
+
+.price__range-input-max--123 {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__range-input-max--900 {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }

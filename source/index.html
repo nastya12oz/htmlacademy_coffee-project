@@ -152,104 +152,109 @@
         <h3 class="page__heading catalog__heading">Каталог кофейных напитков</h3>
         <div class="catalog__wrap">
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="form__fieldset form-price price">
-              <legend class="form__title price__title">Цена</legend>
-              <div class="price__range">
-                <div class="price__range-scale">
-                  <div class="price__range-bar" style="left: 7px; width: 215px">
-                    <button class="price__range-toggle price__range-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="price__range-toggle price__range-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
+            <div class="form__wrap">
+              <fieldset class="form__fieldset form-price price">
+                <legend class="form__title price__title">Цена</legend>
+                <div class="price__range">
+                  <div class="price__range-scale">
+                    <div class="price__range-bar">
+                      <button class="price__range-toggle price__range-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="price__range-toggle price__range-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="price__range-wrapper-inputs">
+                    <label class="form__field price-min">
+                      <input class="price__range-input price__range-input-min" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="form__field price-max">
+                      <input class="price__range-input price__range-input-max price__range-input-max--123" type="number" value="123" name="max-price">
+                      <input class="price__range-input price__range-input-max price__range-input-max--900" type="number " value="900" name="max-price">
+                    </label>
                   </div>
                 </div>
-                <div class="price__range-wrapper-inputs">
-                  <label class="form__field price-min">
-                    <input class="price__range-input price__range-input-min" type="number" value="0" name="min-price">
-                  </label>
-                  <label class="form__field price-max">
-                    <input class="price__range-input price__range-input-max" type="number" value="123" name="max-price">
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="form__fieldset form-milk milk-form">
-              <legend class="form__title form-milk__title">Наличие молока</legend>
-              <ul class="milk-form__list">
-                <li class="milk-form__item">
-                  <label class="form__field milk-form__field">
-                    <input class="milk-form__field-control input visually-hidden" type="radio" value="Weight-loss" name="form__milk-group" checked>
-                    <span class="input-radio"></span>
-                    <span class="form__field-label milk-form-answer">Неважно</span>
-                  </label>
-                </li>
-                <li class="milk-form__item">
-                  <label class="form__field milk-form__field">
-                    <input class="milk-form__field-control input visually-hidden" type="radio" value="Mass-gain" name="form__milk-group">
-                    <span class="input-radio"></span>
-                    <span class="form__field-label milk-form-answer">Только животное</span>
-                  </label>
-                </li>
-                <li class="milk-form__item">
-                  <label class="form__field milk-form__field">
-                    <input class="milk-form__field-control input visually-hidden" type="radio" value="Need-advice" name="form__milk-group">
-                    <span class="input-radio"></span>
-                    <span class="form__field-label milk-form-answer">Только растительное</span>
-                  </label>
-                </li>
-                <li class="milk-form__item">
-                  <label class="form__field milk-form__field">
-                    <input class="milk-form__field-control input visually-hidden" type="radio" value="Need-advice" name="form__milk-group">
-                    <span class="input-radio"></span>
-                    <span class="form__field-label milk-form-answer">Без молока</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset country-form">
-              <legend class="form__title country-form__title">Страна произрастания</legend>
-            <ul class="country-form__list">
-                <li class="country-form__item">
-                  <label class="form__field country-form__field">
-                    <input class="country-form__control input visually-hidden" type="checkbox" name="Brazil" checked>
-                    <span class="input-checkbox"></span>
-                    <span class="form__field-label country-form__field-label">Бразилия</span>
-                  </label>
-                </li>
-                <li class="country-form__item">
-                  <label class="form__field country-form__field">
-                    <input class="country-form__control input visually-hidden" type="checkbox" name="Ethiopia">
-                    <span class="input-checkbox"></span>
-                    <span class="form__field-label country-form__field-label">Эфиопия</span>
-                  </label>
-                </li>
-                <li class="country-form__item">
-                  <label class="form__field country-form__field">
-                    <input class="country-form__control input visually-hidden" type="checkbox" name="Columbia">
-                    <span class="input-checkbox"></span>
-                    <span class="form__field-label country-form__field-label">Колумбия</span>
-                  </label>
-                </li>
-                <li class="country-form__item">
-                  <label class="form__field country-form__field">
-                    <input class="country-form__control input visually-hidden" type="checkbox" name="Costa-rica">
-                    <span class="input-checkbox"></span>
-                    <span class="form__field-label country-form__field-label">Коста-Рика</span>
-                  </label>
-                </li>
-                <li class="country-form__item">
-                  <label class="form__field country-form__field">
-                    <input class="country-form__control input visually-hidden" type="checkbox" name="Peru">
-                    <span class="input-checkbox"></span>
-                    <span class="form__field-label country-form__field-label">Перу</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button form__button form__button--submit" type="submit">Применить</button>
-            <button class="button form__button form__button--reset" type="reset">Сбросить</button>
+              </fieldset>
+              <fieldset class="form__fieldset form-milk milk-form">
+                <legend class="form__title form-milk__title">Наличие молока</legend>
+                <ul class="milk-form__list">
+                  <li class="milk-form__item">
+                    <label class="form__field milk-form__field">
+                      <input class="milk-form__field-control input visually-hidden" type="radio" value="Weight-loss" name="form__milk-group" checked>
+                      <span class="input-radio"></span>
+                      <span class="form__field-label milk-form-answer">Неважно</span>
+                    </label>
+                  </li>
+                  <li class="milk-form__item">
+                    <label class="form__field milk-form__field">
+                      <input class="milk-form__field-control input visually-hidden" type="radio" value="Mass-gain" name="form__milk-group">
+                      <span class="input-radio"></span>
+                      <span class="form__field-label milk-form-answer">Только животное</span>
+                    </label>
+                  </li>
+                  <li class="milk-form__item">
+                    <label class="form__field milk-form__field">
+                      <input class="milk-form__field-control input visually-hidden" type="radio" value="Need-advice" name="form__milk-group">
+                      <span class="input-radio"></span>
+                      <span class="form__field-label milk-form-answer">Только растительное</span>
+                    </label>
+                  </li>
+                  <li class="milk-form__item">
+                    <label class="form__field milk-form__field">
+                      <input class="milk-form__field-control input visually-hidden" type="radio" value="Need-advice" name="form__milk-group">
+                      <span class="input-radio"></span>
+                      <span class="form__field-label milk-form-answer">Без молока</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__fieldset country-form">
+                <legend class="form__title country-form__title">Страна произрастания</legend>
+              <ul class="country-form__list">
+                  <li class="country-form__item">
+                    <label class="form__field country-form__field">
+                      <input class="country-form__control input visually-hidden" type="checkbox" name="Brazil" checked>
+                      <span class="input-checkbox"></span>
+                      <span class="form__field-label country-form__field-label">Бразилия</span>
+                    </label>
+                  </li>
+                  <li class="country-form__item">
+                    <label class="form__field country-form__field">
+                      <input class="country-form__control input visually-hidden" type="checkbox" name="Ethiopia">
+                      <span class="input-checkbox"></span>
+                      <span class="form__field-label country-form__field-label">Эфиопия</span>
+                    </label>
+                  </li>
+                  <li class="country-form__item">
+                    <label class="form__field country-form__field">
+                      <input class="country-form__control input visually-hidden" type="checkbox" name="Columbia">
+                      <span class="input-checkbox"></span>
+                      <span class="form__field-label country-form__field-label">Колумбия</span>
+                    </label>
+                  </li>
+                  <li class="country-form__item">
+                    <label class="form__field country-form__field">
+                      <input class="country-form__control input visually-hidden" type="checkbox" name="Costa-rica">
+                      <span class="input-checkbox"></span>
+                      <span class="form__field-label country-form__field-label">Коста-Рика</span>
+                    </label>
+                  </li>
+                  <li class="country-form__item">
+                    <label class="form__field country-form__field">
+                      <input class="country-form__control input visually-hidden" type="checkbox" name="Peru">
+                      <span class="input-checkbox"></span>
+                      <span class="form__field-label country-form__field-label">Перу</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__button-wrap">  
+              <button class="button form__button form__button--submit" type="submit">Применить</button>
+              <button class="button form__button form__button--reset" type="reset">Сбросить</button>
+            </div>  
           </form>
           <div class="catalog__container">
             <div class="catalog-sort">
