@@ -12,17 +12,17 @@
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> 
 </head>
 <body class="page__body">
   <header class="main-header container">
     <div class="main-header__logo-wrapper">
       <a class="main-header__logo" href="#">
-        <!-- <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/logo-big.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-short.svg">
-          <img class="main-header__logo-pic" src="img/logo/logo-icon.svg" width="34" height="38" alt="Логотип магазина Drink2Go.">
-        </picture> -->
-        <img class="main-header__logo-mobile" width="32" height="36" src="img/logo/logo-icon.svg" alt="Логотип магазина Drink2Go.">
+        <picture>
+          <source media="(min-width: 1440px)" width="170" height="36" srcset="img/logo/logo-big.svg">
+          <source media="(min-width: 768px)" width="82" height="36" srcset="img/logo/logo-short.svg">
+          <img class="main-header__logo-mobile" width="32" height="36" src="img/logo/logo-icon.svg" alt="Логотип магазина Drink2Go.">
+        </picture>
       </a>
       <p class="main-header__text">Интернет-магазин кофейных напитков</p>
     </div>  
@@ -64,7 +64,98 @@
     <h1 class="visually-hidden">Магазин Drink2Go</h1>
     <section class="hero">
       <div class="container">
-        <ul class="hero__list">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper hero__list">
+            <div class="swiper-slide">
+              <div class="hero__item">
+                <picture class="hero__image hero__image--flat_white">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/flat_white-desktop.webp 1x, img/hero/flat_white-2x-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/flat_white-tablet.webp 1x, img/hero/flat_white-2x-tablet.webp 2x">
+                  <source type="image/webp" srcset="img/flat_white-mobile.webp 1x, img/hero/flat_white-2x-mobile.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="iimg/hero/flat_white-desktop.png 1x, img/hero/flat_white-2x-desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/hero/flat_white-tablet.png 1x, img/hero/flat_white-2x-tablet.png 2x">
+                  <img class="hero__image" width="280" height="280" alt='' src="img/hero/flat_white-mobile.png" srcset="img/hero/flat_white-2x-mobile.png 2x">
+                </picture>
+                <div class="hero__information">
+                  <h2 class="hero__title page__title">Новинка!</h2>
+                  <h3 class="hero__name">Декаф Флэт Уайт</h3>
+                  <p class="hero__description">Свежесваренный кофе без кофеина 
+                    из Эфиопии <br class="hero__indent">с натуральным фермерским молоком — 
+                    то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                    <div class="hero__buy">
+                      <p class="hero__old-price">295₽</p>
+                      <p class="hero__price page__price">255₽</p>
+                      <button class="button hero__button"> Заказать</button>
+                    </div>
+                </div> 
+              </div>  
+              <ol class="hero__steps">
+                <li class="hero__steps-item hero__steps-item--active"></li>
+                <li class="hero__steps-item"></li>
+                <li class="hero__steps-item"></li>
+              </ol>  
+            </div>
+            <div class="swiper-slide">
+              <div class="hero__item">
+                <picture class="hero__image hero__image--lavender">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/lavender-desktop.webp 1x, img/hero/lavender-2x-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/lavender-tablet.webp 1x, img/hero/lavender-2x-tablet.webp 2x">
+                  <source type="image/webp" srcset="img/hero/lavender-mobile.webp 1x, img/hero/lavender-2x-mobile.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/hero/lavender-desktop.png 1x, img/hero/lavender-2x-desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/hero/lavender-tablet.png 1x, img/hero/lavender-2x-tablet.png 2x">
+                  <img class="hero__image" width="280" height="280" alt='' src="img/hero/lavender-mobile.png" srcset="img/hero/lavender-2x-mobile.png 2x">
+                </picture>
+                <div class="hero__information">
+                  <h2 class="hero__title page__title">Новинка!</h2>
+                  <h3 class="hero__name">Лавандовый Латте</h3>
+                  <p class="hero__description">Невероятное сочетание перуанской высокогорной арабики 
+                    с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <div class="hero__buy">
+                    <p class="hero__old-price">295₽</p>
+                    <p class="hero__price page__price">255₽</p>
+                    <button class="button hero__button"> Заказать</button>
+                  </div>  
+                </div>
+              </div>  
+              <ol class="hero__steps">
+                <li class="hero__steps-item"></li>
+                <li class="hero__steps-item hero__steps-item--active"></li>
+                <li class="hero__steps-item"></li>
+              </ol> 
+            </div>
+            <div class="swiper-slide">
+              <div class="hero__item">
+                <picture class="hero__image hero__image--espresso">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/espresso-desktop.webp 1x, img/hero/espresso-2x-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/espresso-tablet.webp 1x, img/hero/espresso-2x-tablet.webp 2x">
+                  <source type="image/webp" srcset="img/hero/espresso-mobile.webp 1x, img/hero/espresso-2x-mobile.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/hero/espresso-desktop.png 1x, img/hero/espresso-2x-desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/hero/espresso-tablet.png 1x, img/hero/espresso-2x-tablet.png 2x">
+                  <img class="hero__image" width="280" height="280" alt='' src="img/hero/espresso-mobile.png" srcset="img/hero/espresso-2x-mobile.png 2x">
+                </picture>
+                <div class="hero__information">
+                  <h2 class="hero__title page__title">Новинка!</h2>
+                  <h3 class="hero__name">Тройной Эспрессо</h3>
+                  <p class="hero__description">Мощнее укола адреналина, чернее самой тёмной ночи, 
+                    этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="hero__buy">
+                    <p class="hero__old-price">395₽</p>
+                    <p class="hero__price page__price">375₽</p>
+                    <button class="button hero__button"> Заказать</button>
+                  </div>  
+                </div>
+              </div>  
+              <ol class="hero__steps">
+                <li class="hero__steps-item"></li>
+                <li class="hero__steps-item"></li>
+                <li class="hero__steps-item hero__steps-item--active"></li>
+              </ol> 
+            </div>
+          </div>
+          <div class="swiper-button-next" id="swiper__button-slide-next"></div>
+          <div class="swiper-button-prev" id="swiper__button-slide-prev"></div>
+        </div>
+        <!-- <ul class="hero__list">
           <li class="hero__item">
             <picture class="hero__image">
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/flat_white-desktop.webp 1x, img/hero/flat_white-2x-desktop.webp 2x">
@@ -87,7 +178,7 @@
                 </div>
             </div>  
           </li>
-          <li class="hero__item ">
+          <li class="hero__item">
             <picture class="hero__image">
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/lavender-desktop.webp 1x, img/hero/lavender-2x-desktop.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/lavender-tablet.webp 1x, img/hero/lavender-2x-tablet.webp 2x">
@@ -129,8 +220,8 @@
               </div>  
             </div>  
           </li>
-        </ul>
-      </div>  
+        </ul> -->
+      </div> 
     </section>
     <section class="advantages container">
       <h2 class="advantages__title page__title">Преимущества</h2>
@@ -384,7 +475,7 @@
         </div>  
         <div class="pagination">
           <ul class="pagination__list">
-            <li class="pagination__item pagination__item--big">
+            <li class="pagination__item pagination__item--big pagination__item--back">
               <a class="button">
                 <span class="pagination__text">Назад</span>
               </a>
@@ -398,7 +489,7 @@
             <li class="pagination__item">
               <a class="pagination__link" href="#">3</a>
             </li>
-            <li class="pagination__item pagination__item--big">
+            <li class="pagination__item pagination__item--big pagination__item--next">
               <a class="button" href="#">
                 <span class="pagination__text">Вперёд</span>
               </a>
@@ -421,12 +512,10 @@
     <div class="footer__wrap">
       <div class="footer__social social container">
         <a class="social__logo-link" href="#">
-          <!-- <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-big.svg">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-short.svg">
-            <img class="main-header__logo-pic" src="img/logo/logo-icon.svg" width="34" height="38" alt="Логотип магазина Drink2Go.">
-          </picture> -->
-          <img class="social__logo-pic" width="82" height="36" src="img/logo/logo-short.svg" alt="Логотип магазина Drink2Go.">
+          <picture>
+            <source media="(min-width: 768px)" width="170" height="36" srcset="img/logo/logo-big.svg">
+            <img class="social__logo-pic" width="82" height="36" src="img/logo/logo-short.svg" alt="Логотип магазина Drink2Go.">
+          </picture>
         </a>
         <p class="footer__text">Интернет-магазин кофейных напитков</p>
         <ul class="social__list">
@@ -518,6 +607,7 @@
       </a>
     </div>  
   </footer>
-  <!-- <script src="/js/script.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>

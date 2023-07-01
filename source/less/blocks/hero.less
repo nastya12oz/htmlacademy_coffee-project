@@ -21,6 +21,12 @@
   }
 }
 
+.hero__information {
+  @media (min-width: @desktop-width) {
+    max-width: 43.4%;
+  }
+}
+
 .hero__list {
   @media (min-width: @desktop-width) {
     padding-left: 65px;
@@ -30,6 +36,7 @@
 
 .hero__image {
   z-index: 1;
+  position: relative;
 
   @media (min-width: @tablet-width) and (max-width: 1439px) {
     width: 476px;
@@ -40,6 +47,30 @@
     width: 600px;
     height: 600px;
   }
+}
+
+.hero__steps {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+  }
+}
+
+.hero__steps-item {
+  @media (min-width: @desktop-width) {
+    width: 62px;
+    height: 4px;
+    background-color: #FFF;
+    margin-right: 10px;
+  }
+}
+
+.hero__steps-item--active {
+  background-color: #7859CF;
 }
 
 .hero__item {
@@ -59,6 +90,7 @@
 .hero__buy {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 
   @media (min-width: @desktop-width) {
@@ -70,6 +102,7 @@
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
+  margin: 0;
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
@@ -85,16 +118,19 @@
 .hero__description {
   margin-bottom: 20px;
 
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 32px;
-    max-width: 80%;
-    margin: 0 auto;
 
     @media (min-width: @desktop-width) {
-      max-width: 54.4%;
       text-align: start;
       margin: 0;
+      width: 100%;
     }
   }
 }
@@ -121,7 +157,7 @@
 
 .hero__indent {
   display: none;
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
     display: block;
   }
 }
