@@ -1,4 +1,6 @@
 .pagination__list {
+  list-style-type: none;
+  padding-inline-start: 0;
   margin-bottom: 0;
   display: flex;
   padding-top: 40px;
@@ -13,7 +15,7 @@
 .pagination__item {
   width: 40px;
   height: 40px;
-  padding: 8px;
+  padding: 10px 8px 3px 8px;
   text-align: center;
   background-color: #FFF;
 
@@ -46,4 +48,22 @@
     background-color: #FFF;
     color: #7859CF;
   }
+}
+
+.pagination__item--next {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 20px;
+    background-image: url("../../img/pagination-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.pagination__item--back {
+  @media (max-width: @mobile-width-only) {
+  padding-top: 20px;
+  background-image: url("../../img/pagination-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 }
