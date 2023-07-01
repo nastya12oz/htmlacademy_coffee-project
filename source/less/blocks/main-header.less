@@ -1,10 +1,11 @@
 .main-header {
-  display: flex;
   padding: 10px 0;
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    align-items: baseline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -12,10 +13,6 @@
   }
 }
 
-.main-header__logo-wrapper {
-  display: flex;
-  margin-right: 100px;
-}
 
 .main-header__text {
   display: none;
@@ -29,10 +26,32 @@
   }
 }
 
+.main-header__profile {
+  @media (max-width: @mobile-width-only) {
+  text-align: end;
+  margin-top: -30px;
+  margin-right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    margin-right: auto;
+  }
+}
+
 .main-header__profile-user {
   padding: 22px;
 }
 
 .main-header__profile-basket {
   padding: 22px;
+}
+
+
+.main-header__profile-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
