@@ -1,21 +1,24 @@
 .main-header {
-  display: flex;
   padding: 10px 0;
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    align-items: baseline;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    margin-bottom: 20px;
+  }
+
 
   @media (min-width: @desktop-width) {
     justify-content: space-between;
   }
 }
 
-.main-header__logo-wrapper {
-  display: flex;
-  margin-right: 100px;
-}
 
 .main-header__text {
   display: none;
@@ -29,10 +32,56 @@
   }
 }
 
-.main-header__profile-user {
-  padding: 22px;
+.main-header__profile {
+
+  @media (max-width: @mobile-width-only) {
+    text-align: end;
+    margin-top: -30px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    margin-top: 10px;
+  }
 }
 
-.main-header__profile-basket {
+.main-header__profile-link {
   padding: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding: 32px 22px;
+    align-self: center;
+    margin-right: auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 32px 20px;
+  }
+
+  &:hover, 
+  &:focus {
+    color: #7859CF;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #F0EBFF;
+  }
+
+  & svg {
+    stroke-width: 10;
+  }
+
+}
+
+.main-header__icon-basket {
+  fill: tomato;
+}
+
+.main-header__profile-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }

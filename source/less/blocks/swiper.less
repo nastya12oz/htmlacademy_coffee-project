@@ -1,12 +1,17 @@
 /* здесь используется !important, 
 чтобы мой стиль был приоритетнее чем встроенные стили из swiperjs */
 
+.swiper-button-next {
+  position: relative;
+}
+
 .swiper-button-next:after, .swiper-button-prev:after {
   width: 15px;
   height: 10px;
   color: #7859CF;
   font-size: 20px !important;
 }
+
 
 /* здесь используется селектор по идентификатору, 
 чтобы мой стиль был приоритетнее чем встроенные стили из swiperjs */
@@ -17,17 +22,10 @@
   height: 714px;
   top: -30px;
 
-  &:hover {
-    color: tomato;
-  }
 }
 
 #swiper__button-slide-next {
   right: -10px;
-
-  &:hover {
-    color: tomato;
-  }
 }
 
 #swiper__button-slide-prev {
