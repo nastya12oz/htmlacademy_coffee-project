@@ -1,11 +1,22 @@
+.pagination {
+  margin-top: 40px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 70px;
+    padding-bottom: 90px;
+  }
+}
+
 .pagination__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   padding-inline-start: 0;
   display: flex;
-  margin-top: 40px;
-  padding-bottom: 45px;
   justify-content: center;
   align-items: center;
 
@@ -16,7 +27,6 @@
 
 .pagination__item {
   text-align: center;
-  background-color: #FFF;
   border-radius: 4px;
 
   &:not(:last-child) {
@@ -27,6 +37,7 @@
 .pagination__link {
   display: block;
   color: #7859CF;
+  background-color: #FFF;
   font-size: 16px;
   width: 40px;
   height: 40px;
@@ -49,16 +60,22 @@
     color: #FFF;
   }
 
-  &--big {
+  &--next {
     @media (min-width: @tablet-width) {
-      width: 91px;
+      width: 104px;
     }
-}
+  }
+  &--back {
+    @media (min-width: @tablet-width) {
+      width: 94px;
+    }
+  }
 }
 
 .pagination-current {
   color: #333333;
   font-weight: 600;
+  background-color: transparent;
 
   &:hover,
   &:focus,

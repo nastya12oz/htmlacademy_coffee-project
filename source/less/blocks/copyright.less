@@ -1,8 +1,15 @@
 .copyright {
-  padding-top: 20px;
   display: flex;
   justify-content: center;
   position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+  }
 
   &::before {
     @media (max-width: @mobile-width-only) {

@@ -1,9 +1,11 @@
 .footer {
-  padding-top: 15px;
-  padding-bottom: 30px;
+  @media (max-width: @mobile-width-only) {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
 
   @media (min-width: @tablet-width) {
-    padding-top: 49px;
+    padding-top: 35px;
     padding-bottom: 40px;
   }
 }
@@ -18,10 +20,18 @@
 
 .footer__media {
   grid-area: media;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 40px;
+  }
 }
 
 .footer__contacts {
   grid-area: contacts;
+
+  @media (min-width: @tablet-width) {
+    margin-right: -30px;
+  }
 }
 
 .footer__wrap {

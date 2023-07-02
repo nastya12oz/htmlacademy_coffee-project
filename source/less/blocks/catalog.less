@@ -1,6 +1,13 @@
 .catalog {
   background-color: #F8F8F8;
-  padding-top: 50px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+  }
 }
 
 .catalog__list {
@@ -51,6 +58,8 @@
   @media (min-width: @tablet-width) {
     text-align: end;
     justify-content: flex-end;
+    margin-top: 28px;
+    margin-bottom: 13px;
   }
 }
 
