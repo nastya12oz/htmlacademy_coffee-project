@@ -14,4 +14,17 @@
 .copyright__link {
   display: flex;
   align-items: center;
+
+  & svg {
+    fill: #BDBDBD;
+  }
+
+  &:hover svg {
+    fill: #7859CF;
+  }
+
+  &:focus svg,
+  &:active svg {
+    fill: #593CAC;
+  }
 }
