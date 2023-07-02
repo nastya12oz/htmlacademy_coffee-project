@@ -2,6 +2,19 @@
   padding-top: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
+
+  &::before {
+    @media (max-width: @mobile-width-only) {
+      position: absolute;
+      content: "";
+      width: 1000%;
+      margin-left: -140px;
+      height: 1px;
+      background-color: #F0EBFF;
+      top: 0;
+    }
+  }
 }
 
 .copyright__text {

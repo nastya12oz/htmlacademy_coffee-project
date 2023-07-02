@@ -1,17 +1,18 @@
 .contacts {
+  padding-bottom: 20px;
+  
   @media (min-width: @tablet-width) {
     max-width: 317px;
   }
 }
 
 .contacts__address {
-  margin-bottom: 16px;
-}
-
-.contacts__address {
   position: relative;
   padding-left: 20px;
   font-style: normal;
+  margin-top: 19px;
+  margin-bottom: 16px;
+
 
   &::before {
     position: absolute;
@@ -28,12 +29,12 @@
   }
 }
 
-.contacts__phone {
+.contacts__icon {
   position: relative;
   padding-left: 20px;
   color: inherit;
 
-  &::before {
+  &--phone::before {
     position: absolute;
     content: " ";
     width: 13px;
@@ -41,5 +42,15 @@
     background-image: url("../../img/phone.svg");
     left: 0;
     top: 1px;
+  }
+
+  &--address::before {
+    position: absolute;
+    content: " ";
+    width: 13px;
+    height: 16px;
+    background-image: url("../../img/address.svg");
+    left: 0;
+    top: 2px;
   }
 }

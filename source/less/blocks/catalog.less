@@ -5,6 +5,8 @@
 
 .catalog__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   padding-inline-start: 0;
   display: grid;
   justify-items: center;
@@ -35,11 +37,16 @@
   text-align: center;
 }
 
+.catalog__heading {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
 .catalog-sort {
   display: flex;
   align-items: center;
-  margin-top: 36px;
-  margin-bottom: 16px;
+  margin-top: 23px;
+  margin-bottom: 3px;
 
   @media (min-width: @tablet-width) {
     text-align: end;
@@ -51,6 +58,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  margin-right: 8px;
 }
 
 .catalog-sort__select-control {

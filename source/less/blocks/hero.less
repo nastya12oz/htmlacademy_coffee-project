@@ -118,6 +118,11 @@
 .hero__description {
   margin-bottom: 20px;
 
+  @media (max-width: @mobile-width-only) {
+    width: 87.5%;
+    margin: 0 auto;
+  }
+
   @media (min-width: @tablet-width) and (max-width: 1439px) {
     max-width: 80%;
     margin: 0 auto;
@@ -136,6 +141,11 @@
 }
 
 .hero__title {
+  @media(max-width: @mobile-width-only) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
   @media (min-width: @desktop-width) {
     text-align: start;
   }
@@ -143,7 +153,8 @@
 
 .hero__button {
   padding: 8px 20px;
-  margin-left: 40px;
+  margin-left: 20px;
+  height: 40px;
 }
 
 .hero__old-price {
@@ -152,6 +163,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+  margin: 0;
   margin-right: 6px;
 }
 
