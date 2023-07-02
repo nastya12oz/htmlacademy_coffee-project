@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -13,6 +12,7 @@
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> 
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header container">
@@ -92,11 +92,11 @@
                     </div>
                 </div> 
               </div>  
-              <ol class="hero__steps">
+              <!-- <ol class="hero__steps">
                 <li class="hero__steps-item hero__steps-item--active"></li>
                 <li class="hero__steps-item"></li>
                 <li class="hero__steps-item"></li>
-              </ol>  
+              </ol>   -->
             </div>
             <div class="swiper-slide">
               <div class="hero__item">
@@ -120,11 +120,11 @@
                   </div>  
                 </div>
               </div>  
-              <ol class="hero__steps">
+              <!-- <ol class="hero__steps">
                 <li class="hero__steps-item"></li>
                 <li class="hero__steps-item hero__steps-item--active"></li>
                 <li class="hero__steps-item"></li>
-              </ol> 
+              </ol>  -->
             </div>
             <div class="swiper-slide">
               <div class="hero__item">
@@ -148,15 +148,17 @@
                   </div>  
                 </div>
               </div>  
-              <ol class="hero__steps">
+              <!-- <ol class="hero__steps">
                 <li class="hero__steps-item"></li>
                 <li class="hero__steps-item"></li>
                 <li class="hero__steps-item hero__steps-item--active"></li>
-              </ol> 
+              </ol>  -->
             </div>
           </div>
-          <div class="swiper-button-next" id="swiper__button-slide-next" type="button"></div>
-          <div class="swiper-button-prev" id="swiper__button-slide-prev" type="button"></div>
+          <div class="swiper-button-next" type="button"></div>
+          <div class="swiper-button-prev" type="button"></div>
+          <div class="swiper-pagination"></div>
+
         </div>
       </div> 
     </section>
@@ -412,22 +414,22 @@
         </div>  
         <div class="pagination">
           <ul class="pagination__list">
-            <li class="pagination__item pagination__item--big pagination__item--back">
-              <a class="button">
+            <li class="pagination__item pagination__item--back">
+              <a class="pagination__link pagination__link--active pagination__link--big">
                 <span class="pagination__text">Назад</span>
               </a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link">1</a>
+              <a class="pagination__link pagination__link--active">1</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link pagination-current" href="#">2</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
+              <a class="pagination__link pagination__link--active" href="#">3</a>
             </li>
-            <li class="pagination__item pagination__item--big pagination__item--next">
-              <a class="button" href="#">
+            <li class="pagination__item pagination__item--next">
+              <a class="pagination__link pagination__link--active pagination__link--big" href="#">
                 <span class="pagination__text">Вперёд</span>
               </a>
             </li>

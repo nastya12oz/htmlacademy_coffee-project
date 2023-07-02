@@ -1,33 +1,34 @@
-/* здесь используется !important, 
-чтобы мой стиль был приоритетнее чем встроенные стили из swiperjs */
-
 .swiper-button-next {
-  position: relative;
+  position: absolute;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
   width: 15px;
   height: 10px;
   color: #7859CF;
-  font-size: 20px !important;
+  font-size: 20px;
 }
 
 
-/* здесь используется селектор по идентификатору, 
-чтобы мой стиль был приоритетнее чем встроенные стили из swiperjs */
+.swiper-pagination-bullet {
+  display: none;
 
-#swiper__button-slide-next,
-#swiper__button-slide-prev {
-  width: 40px;
-  height: 714px;
-  top: -30px;
+  @media (min-width: @desktop-width) {
+  display: inline-block;
+  width: 62px;
+  height: 4px;
+  background-color: #FFF;
+  opacity: 1;
+  margin-right: 10px;
+  border-radius: 4px;
 
+  &:hover {
+    background-color: #7859CF40;
+  }
+  }
 }
 
-#swiper__button-slide-next {
-  right: -10px;
-}
-
-#swiper__button-slide-prev {
-  left: -10px;
-}
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background-color: #7859CF;
+} 
