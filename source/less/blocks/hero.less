@@ -4,7 +4,7 @@
   padding: 20px 0 60px;
   position: relative;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
     padding-top: 60px;
     padding-bottom: 70px;
   }
@@ -20,11 +20,17 @@
       bottom: 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 30px;
+  }
 }
 
 .hero__information {
   @media (min-width: @desktop-width) {
-    max-width: 43.4%;
+    max-width: 40.4%;
+    margin-left: 33px;
+    margin-bottom: 17px;
   }
 }
 
@@ -86,6 +92,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    margin-left: 40px;
   }
 }
 
@@ -112,20 +119,20 @@
     line-height: 80px;
     margin-top: 5px;
     margin-bottom: 15px;
-
   }
 
   @media (min-width: @desktop-width) {
     text-align: start;
+    margin-top: 5px;
+    margin-bottom: 17px;
   }
 }
 
 .hero__description {
-  margin-bottom: 20px;
-
   @media (max-width: @mobile-width-only) {
     width: 87.5%;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @tablet-width) and (max-width: 1439px) {
@@ -136,14 +143,16 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 32px;
+  }  
 
-    @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
       text-align: start;
       margin: 0;
       width: 100%;
+      margin-bottom: 40px;
     }
-  }
 }
+
 
 .hero__title {
   @media(max-width: @mobile-width-only) {
@@ -174,7 +183,7 @@
 
 .hero__indent {
   display: none;
-  @media (min-width: @tablet-width) and (max-width: 1439px) {
+  @media (min-width: @tablet-width) {
     display: block;
   }
 }

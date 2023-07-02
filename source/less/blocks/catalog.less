@@ -5,8 +5,12 @@
     padding-top: 50px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
     padding-top: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 102px;
   }
 }
 
@@ -36,7 +40,6 @@
 .catalog__wrap {
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -45,8 +48,10 @@
 }
 
 .catalog__heading {
-  margin-top: 5px;
-  margin-bottom: 20px;
+  @media (max-width: 1439px) {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 }
 
 .catalog-sort {

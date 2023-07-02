@@ -29,7 +29,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 250px;
+    width: 270px;
   }
 }
 
@@ -94,7 +94,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+
+  @media  (max-width: 1439px) {
+    margin-top: 10px;
+  }
 }
 
 .price-max {
@@ -116,16 +119,8 @@
   }
 }
 
-.price__range-input-max {
-  @media (min-width: @tablet-width) {
-    &::placeholder {
-      content: 900;
-    }
-  }
-}
-
 .price__range-input {
-  background-color: transparent;
+  background-color: #FFF;
   border: solid 2px #9070EC;
   border-radius: 4px;
   width: 118px;
@@ -139,8 +134,12 @@
   margin-top: 24px;
   margin-bottom: 30px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
     width: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
   }
 
   &::placeholder {
