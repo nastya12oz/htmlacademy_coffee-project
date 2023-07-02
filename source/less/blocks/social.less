@@ -22,17 +22,27 @@
   }
 }
 
-.social__item {
-  padding: 5px 10px;
-}
-
 .social__link {
+  padding: 10px;
+  padding-top: 15px;
+  
+
+  &:hover,
+  &:focus {
+    background-color: #F0EBFF;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #7859CF40;
+  }
 
   & svg {
     fill: #BDBDBD;
   }
 
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: #7859CF;
   }
 }

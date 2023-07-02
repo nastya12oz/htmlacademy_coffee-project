@@ -93,15 +93,11 @@
   }
 }
 
-.price__range-input-max--123 {
+.price__range-input-max {
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.price__range-input-max--900 {
-  @media (max-width: @mobile-width-only) {
-    display: none;
+    &::placeholder {
+      content: 900;
+    }
   }
 }
 

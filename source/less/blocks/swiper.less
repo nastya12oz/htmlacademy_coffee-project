@@ -14,17 +14,19 @@
   display: none;
 
   @media (min-width: @desktop-width) {
-  display: inline-block;
-  width: 62px;
-  height: 4px;
-  background-color: #FFF;
-  opacity: 1;
-  margin-right: 10px;
-  border-radius: 4px;
+    display: inline-block;
+    width: 62px;
+    height: 4px;
+    background-color: #FFF;
+    opacity: 1;
+    margin-right: 10px;
+    border-radius: 4px;
 
-  &:hover {
-    background-color: #7859CF40;
-  }
+    &:hover,
+    &:focus {
+      background-color: #7859CF40;
+      outline: none;
+    }
   }
 }
 
