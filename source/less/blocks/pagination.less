@@ -37,7 +37,7 @@
   &:not(:last-child) {
     margin-right: 20px;
   }
-  }
+}
 
 .pagination__link {
   display: block;
@@ -53,6 +53,11 @@
     background-color: #9070EC;
     color: #FFF;
     outline: none;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #FFF;
   }
   
   &:active {
@@ -70,6 +75,7 @@
       width: 104px;
     }
   }
+
   &--back {
     @media (min-width: @tablet-width) {
       width: 94px;
@@ -113,5 +119,14 @@
     background-image: url("../../img/pagination-left.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+.pagination__icon {
+  display: none;
+
+  @media (max-width: @mobile-width-only) {
+    display: inline;
+    fill: #7859CF;
   }
 }

@@ -25,14 +25,9 @@
   background-color: #7859CF;
 }
 
-.input-radio:hover + .input-radio::before {
-  background-color: tomato;
-}
-
 .input[type="radio"]:checked + .input-radio {
   border-color: #7859CF;
 }
-
 
 .input[type="radio"]:checked + .input-radio::before {
   position: absolute;
@@ -44,7 +39,6 @@
   left: 2px;
   top: 2px;
 }
-
 
 .input[type="checkbox"]:checked + .input-checkbox::before {
   position: absolute;
@@ -66,4 +60,67 @@
   height: 20px;
   top: 2px;
   left: 2px;
+}
+
+.milk-form__field-control:hover + .input-radio.input-radio::before {
+  position: absolute;
+  background-color: #7859CF40;
+  border-radius: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 2px;
+}
+
+.milk-form__field-control:hover + .input-radio {
+  border-color: #7859CF;
+}
+
+.milk-form__item:focus + .input-radio {
+  outline: solid 2px #7859CF;
+}
+
+.milk-form__field-control:disabled + .input-radio {
+  border-color: #E2E2E2;
+}
+
+.milk-form__field-control:disabled + .input-radio.input-radio::before {
+  position: absolute;
+  background-color: #E2E2E2;
+  border-radius: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 2px;
+}
+
+.milk-form__field-control:disabled ~ span {
+  color: #E2E2E2;
+}
+
+.country-form__control:hover + .input-checkbox {
+  outline: solid 2px #9070EC;
+  background-color: #7859CF40;
+}
+
+.country-form__control:focus-within + .input-checkbox {
+  outline: solid 2px #9070EC;
+  background-color: #7859CF40;
+}
+
+.country-form__control:disabled + .input-checkbox {
+  background-color: #E2E2E2;
+}
+
+.input[type="checkbox"]:checked:disabled + .input-checkbox::before {
+  position: absolute;
+  background-color: #BDBDBD;
+  border-radius: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 20px;
 }

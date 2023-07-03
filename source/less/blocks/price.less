@@ -76,10 +76,6 @@
   right: -20px;
 }
 
-// .form__range-wrapper-inputs {
-//   display: flex;
-// }
-
 .price__range-input::-webkit-outer-spin-button,
 .price__range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -113,7 +109,6 @@
     left: -25px;
   }
 
-
   @media (min-width: @tablet-width) {
     margin-left: 48px;
   }
@@ -134,6 +129,15 @@
   margin-top: 24px;
   margin-bottom: 30px;
 
+  &:focus {
+    border-color: #593CAC;
+  }
+
+  &:disabled {
+    border-color: #BDBDBD;
+  }
+
+
   @media (min-width: @tablet-width) and (max-width: 1439px) {
     width: 87px;
   }
@@ -141,9 +145,4 @@
   @media (min-width: @desktop-width) {
     width: 134px;
   }
-
-  &::placeholder {
-    color: #BDBDBD;
-  }
 }
-

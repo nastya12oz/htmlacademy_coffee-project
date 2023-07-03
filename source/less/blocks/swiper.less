@@ -1,10 +1,65 @@
 .swiper-button-next {
   position: absolute;
-  right: -5px;
+  height: 100%;
+  width: 80px;
+
+  @media (max-width: @mobile-width-only) {
+    right: -30px;
+    top: 35px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    right: 0;
+    top: -100px;
+    height: 93%;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
+    top: 30px;
+  }
+
+  &:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 13%, rgba(255,255,255,0) 100%);
+  }
+
+  &:active {
+    background: rgb(120,89,207);
+    background: linear-gradient(270deg, rgba(120,89,207,0.25) 13%, rgba(120,89,207,0) 100%);
+  }
 }
 
 .swiper-button-prev {
-  left: -5px;
+  position: absolute;
+  height: 100%;
+  width: 80px;
+
+  @media (max-width: @mobile-width-only) {
+    left: -30px;
+    top: 35px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    left: 0;
+    top: -100px;
+    height: 93%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+    top: 30px;
+  }
+
+  &:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 13%, rgba(255,255,255,0) 100%);
+  }
+
+  &:active {
+    background: rgb(120,89,207);
+    background: radial-gradient(circle, rgba(120,89,207,0.25) 22%, rgba(120,89,207,0) 62%);
+  }
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
