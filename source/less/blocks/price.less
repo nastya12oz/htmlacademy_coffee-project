@@ -97,14 +97,16 @@
 .price-max {
   position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 8px;
-    height: 2px;
-    background-color: #bdbdbd;
-    bottom: 50px;
-    left: -25px;
+  @media (max-width: 330px) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 2px;
+      background-color: #bdbdbd;
+      bottom: 50px;
+      left: -25px;
+    }
   }
 
   @media (min-width: @tablet-width) {
