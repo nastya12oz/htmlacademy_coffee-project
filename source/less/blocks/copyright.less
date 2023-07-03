@@ -1,7 +1,27 @@
 .copyright {
-  padding-top: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    padding-top: 10px;
+  }
+
+  &::before {
+    @media (max-width: @mobile-width-only) {
+      position: absolute;
+      content: "";
+      width: 1000%;
+      margin-left: -140px;
+      height: 1px;
+      background-color: #F0EBFF;
+      top: 0;
+    }
+  }
 }
 
 .copyright__text {
@@ -19,6 +39,16 @@
     fill: #BDBDBD;
   }
 
+  &:hover .copyright__text {
+    color: #7859CF;
+  }
+
+  &:focus .copyright__text,
+  &:active .copyright__text {
+    color: #593CAC;
+    outline: none;
+  }
+
   &:hover svg {
     fill: #7859CF;
   }
@@ -26,5 +56,6 @@
   &:focus svg,
   &:active svg {
     fill: #593CAC;
+    outline: none;
   }
 }

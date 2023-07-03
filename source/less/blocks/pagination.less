@@ -1,11 +1,29 @@
+.pagination {
+  margin-top: 40px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    margin-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+    padding-bottom: 120px;
+  }
+}
+
 .pagination__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   padding-inline-start: 0;
-  margin-bottom: 0;
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 44px;
   justify-content: center;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     justify-content: end;
@@ -13,31 +31,64 @@
 }
 
 .pagination__item {
-  width: 40px;
-  height: 40px;
-  padding: 10px 8px 3px 8px;
   text-align: center;
-  background-color: #FFF;
+  border-radius: 4px;
 
   &:not(:last-child) {
     margin-right: 20px;
   }
-
-  &--big {
-    @media (min-width: @tablet-width) {
-      width: 91px;
-    }
   }
-}
 
 .pagination__link {
+  display: block;
   color: #7859CF;
+  background-color: #FFF;
   font-size: 16px;
+  width: 40px;
+  height: 40px;
+  padding: 10px 8px 3px 8px;
+
+  &:hover,
+  &:focus {
+    background-color: #9070EC;
+    color: #FFF;
+    outline: none;
+  }
+  
+  &:active {
+    background-color: #593CAC;
+    color: #FFF;
+  }
+
+  &:disabled {
+    background-color: #E2E2E2;
+    color: #FFF;
+  }
+
+  &--next {
+    @media (min-width: @tablet-width) {
+      width: 104px;
+    }
+  }
+  &--back {
+    @media (min-width: @tablet-width) {
+      width: 94px;
+    }
+  }
 }
 
 .pagination-current {
   color: #333333;
   font-weight: 600;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+  }
 }
 
 .pagination__text {
@@ -45,14 +96,12 @@
 
   @media (min-width: @tablet-width) {
     display: inline;
-    background-color: #FFF;
-    color: #7859CF;
+    background-color: transparent;
   }
 }
 
 .pagination__item--next {
   @media (max-width: @mobile-width-only) {
-    padding-top: 20px;
     background-image: url("../../img/pagination-right.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -61,9 +110,8 @@
 
 .pagination__item--back {
   @media (max-width: @mobile-width-only) {
-  padding-top: 20px;
-  background-image: url("../../img/pagination-left.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+    background-image: url("../../img/pagination-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

@@ -1,5 +1,16 @@
 .site-list {
-  margin-top: 13px;
+  @media (max-width: @mobile-width-only) {
+    margin-top: 13px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    margin-right: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 25px;
+    margin-right: 160px;
+  }
 }
 
 .site-list__item {
@@ -34,7 +45,7 @@
   padding-left: 40%;
 
   @media (min-width: @tablet-width) {
-    padding: 26px 20px;
+    padding: 26px 20px 30px;
   }
 
   &:hover, 

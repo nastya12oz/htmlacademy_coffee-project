@@ -1,3 +1,13 @@
+.price {
+  @media (min-width: @tablet-width) {
+    margin-right: 30px;
+  }
+}
+
+.price__title {
+  margin-bottom: 30px;
+}
+
 .price__range-scale {
   position: relative;
   height: 2px;
@@ -12,21 +22,21 @@
   height: 4px;
   background-color: #9070EC;
   left: 7px; 
-  width: 215px;
+  width: 235px;
 
   @media (min-width: @tablet-width) {
-    width: 190px;
+    width: 175px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 250px;
+    width: 270px;
   }
 }
 
 .price__range-toggle {
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 23px;
+  height: 23px;
   background-color: #FFF;
   border: 2px solid #9070EC;
   border-radius: 50%;
@@ -58,12 +68,12 @@
 }
 
 .price__range-min {
-  top: -8px;
-  left: -16px;
+  top: -9px;
+  left: -3px;
 } 
 .price__range-max {
   top: -8px;
-  right: -15px;
+  right: -20px;
 }
 
 // .form__range-wrapper-inputs {
@@ -76,7 +86,6 @@
   margin: 0;
 }
 
-
 .price__range-scale {
   width: 100%;
 }
@@ -85,28 +94,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media  (max-width: 1439px) {
+    margin-top: 10px;
+  }
 }
 
 .price-max {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 2px;
+    background-color:#BDBDBD;
+    bottom: 50px;
+    left: -25px;
+  }
+
+
   @media (min-width: @tablet-width) {
     margin-left: 48px;
   }
 }
 
-.price__range-input-max--123 {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.price__range-input-max--900 {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-}
-
 .price__range-input {
-  background-color: transparent;
+  background-color: #FFF;
   border: solid 2px #9070EC;
   border-radius: 4px;
   width: 118px;
@@ -120,13 +134,16 @@
   margin-top: 24px;
   margin-bottom: 30px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
     width: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
   }
 
   &::placeholder {
     color: #BDBDBD;
   }
-
 }
 

@@ -1,14 +1,26 @@
 .advantages {
-  padding: 50px 0 60px;
+  padding: 50px 0 30px;
   text-align: center;
 
   @media (min-width: @tablet-width) and (max-width: 1439px) {
     padding-top: 0;
+    padding-bottom: 85px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 96px;
+    padding-bottom: 106px;
+    padding-top: 95px;
   }
+}
+
+.advantages__heading {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 5px;
 }
 
 .advantages__list {
@@ -19,8 +31,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    margin-top: 60px;
-    column-gap: 30px;
+    column-gap: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,7 +41,7 @@
 
 .advantages__item {
   position: relative;
-  padding-top: 80px;
+  padding-top: 85px;
 
   &--speed::before {
     position: absolute;
@@ -39,8 +50,8 @@
     height: 56px;
     background-image: url("../../img/speed.svg");
     background-repeat: no-repeat;
-    top: 15px; 
-    left: 41%;
+    top: 20px; 
+    left: 42%;
   }
 
   &--fit::before {
@@ -50,7 +61,7 @@
     height: 56px;
     background-image: url("../../img/fit.svg");
     background-repeat: no-repeat;
-    top: 15px; 
+    top: 20px; 
     left: 41%;
   }
 
@@ -61,7 +72,7 @@
     height: 56px;
     background-image: url("../../img/energy.svg");
     background-repeat: no-repeat;
-    top: 15px; 
+    top: 20px; 
     left: 41%;
   }
 
@@ -77,7 +88,7 @@
   }
 
   @media (min-width: @tablet-width) and (max-width: 1439px) {
-    padding-top: 50px;
+    padding-top: 48px;
     padding-left: 80px;
     text-align: start;
 
@@ -87,13 +98,13 @@
     }
   
     &--fit::before {
-      top: 55px; 
+      top: 45px; 
       left: 10px;
     }
   
     &--energy::before {
-      top: 55px; 
-      left: 10px;
+      top: 45px; 
+      left: 15px;
     }
   
     &--ecology::before {
@@ -104,6 +115,12 @@
 }
 
 .advantages__item-heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+
+
   @media (min-width: @tablet-width) {
     font-size: 24px;
     line-height: 36px;
@@ -112,8 +129,27 @@
 }
 
 .advantages__item-text {
+  margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 5px;
+    margin-bottom: 13px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+}
+}
+
+.advantages__indent {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
