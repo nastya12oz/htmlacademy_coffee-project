@@ -14,14 +14,15 @@
   margin-bottom: 6px;
   margin-right: 20px;
   background-color: #dcdcdc;
+  width: 100%;
 }
 
 .price__range-bar {
   position: absolute;
   right: 50px;
   height: 4px;
-  background-color: #9070EC;
-  left: 7px; 
+  background-color: #9070ec;
+  left: 7px;
   width: 235px;
 
   @media (min-width: @tablet-width) {
@@ -37,8 +38,8 @@
   position: absolute;
   width: 23px;
   height: 23px;
-  background-color: #FFF;
-  border: 2px solid #9070EC;
+  background-color: #ffffff;
+  border: 2px solid #9070ec;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
@@ -53,32 +54,29 @@
   }
 
   &:hover {
-    background-color: #7859CF40;
+    background-color: #7859cf40;
   }
 
   &:active {
-    background-color: #7859CF;
+    background-color: #7859cf;
   }
 }
 
 .form-price {
   &:disabled {
-    border-color: #BDBDBD;
+    border-color: #bdbdbd;
   }
 }
 
 .price__range-min {
   top: -9px;
   left: -3px;
-} 
+}
+
 .price__range-max {
   top: -8px;
   right: -20px;
 }
-
-// .form__range-wrapper-inputs {
-//   display: flex;
-// }
 
 .price__range-input::-webkit-outer-spin-button,
 .price__range-input::-webkit-inner-spin-button {
@@ -86,16 +84,12 @@
   margin: 0;
 }
 
-.price__range-scale {
-  width: 100%;
-}
-
 .price__range-wrapper-inputs {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @media  (max-width: 1439px) {
+  @media (max-width: 1439px) {
     margin-top: 10px;
   }
 }
@@ -108,11 +102,10 @@
     content: "";
     width: 8px;
     height: 2px;
-    background-color:#BDBDBD;
+    background-color: #bdbdbd;
     bottom: 50px;
     left: -25px;
   }
-
 
   @media (min-width: @tablet-width) {
     margin-left: 48px;
@@ -120,8 +113,8 @@
 }
 
 .price__range-input {
-  background-color: #FFF;
-  border: solid 2px #9070EC;
+  background-color: #ffffff;
+  border: solid 2px #9070ec;
   border-radius: 4px;
   width: 118px;
   height: 40px;
@@ -134,6 +127,15 @@
   margin-top: 24px;
   margin-bottom: 30px;
 
+  &:focus {
+    border-color: #593cac;
+  }
+
+  &:disabled {
+    border-color: #bdbdbd;
+  }
+
+
   @media (min-width: @tablet-width) and (max-width: 1439px) {
     width: 87px;
   }
@@ -141,9 +143,4 @@
   @media (min-width: @desktop-width) {
     width: 134px;
   }
-
-  &::placeholder {
-    color: #BDBDBD;
-  }
 }
-

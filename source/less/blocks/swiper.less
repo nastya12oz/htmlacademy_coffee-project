@@ -1,16 +1,72 @@
 .swiper-button-next {
   position: absolute;
-  right: -5px;
+  height: 100%;
+  width: 80px;
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: @mobile-width-only) {
+    right: -30px;
+    top: 35px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    right: 0;
+    top: -100px;
+    height: 93%;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
+    top: 30px;
+  }
+
+  &:hover {
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background-image: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 13%, rgba(120, 89, 207, 0) 100%);
+  }
 }
 
 .swiper-button-prev {
-  left: -5px;
+  position: absolute;
+  height: 100%;
+  width: 80px;
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: @mobile-width-only) {
+    left: -30px;
+    top: 35px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    left: 0;
+    top: -100px;
+    height: 93%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+    top: 30px;
+  }
+
+  &:hover {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background-image: radial-gradient(circle, rgba(120, 89, 207, 0.25) 22%, rgba(120, 89, 207, 0) 62%);
+  }
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   width: 15px;
   height: 10px;
-  color: #7859CF;
+  color: #7859cf;
   font-size: 20px;
 }
 
@@ -21,23 +77,23 @@
     display: inline-block;
     width: 62px;
     height: 4px;
-    background-color: #FFF;
+    background-color: #ffffff;
     opacity: 1;
     margin-right: 10px;
     border-radius: 4px;
 
     &:hover,
     &:focus {
-      background-color: #7859CF40;
+      background-color: #7859cf40;
       outline: none;
     }
   }
 }
 
 .swiper-pagination-bullet-active {
-  color: #fff;
-  background-color: #7859CF;
-} 
+  color: #ffffff;
+  background-color: #7859cf;
+}
 
 .swiper-slide-active {
   @media (min-width: @desktop-width) {
