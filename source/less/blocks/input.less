@@ -3,7 +3,7 @@
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  border: solid 2px #BDBDBD;
+  border: solid 2px #bdbdbd;
   position: relative;
 
   @media (max-width: @mobile-width-only) {
@@ -14,7 +14,7 @@
 
 .input-checkbox {
   display: inline-block;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
   width: 42px;
   height: 24px;
   border-radius: 12px;
@@ -22,16 +22,16 @@
 }
 
 .input[type="checkbox"]:checked + .input-checkbox {
-  background-color: #7859CF;
+  background-color: #7859cf;
 }
 
 .input[type="radio"]:checked + .input-radio {
-  border-color: #7859CF;
+  border-color: #7859cf;
 }
 
 .input[type="radio"]:checked + .input-radio::before {
   position: absolute;
-  background-color: #7859CF;
+  background-color: #7859cf;
   border-radius: 50%;
   content: "";
   width: 16px;
@@ -42,7 +42,7 @@
 
 .input[type="checkbox"]:checked + .input-checkbox::before {
   position: absolute;
-  background-color: #FFF;
+  background-color: #ffffff;
   border-radius: 50%;
   content: "";
   width: 20px;
@@ -53,7 +53,7 @@
 
 .input[type="checkbox"] + .input-checkbox::before {
   position: absolute;
-  background-color: #FFF;
+  background-color: #ffffff;
   border-radius: 50%;
   content: "";
   width: 20px;
@@ -62,61 +62,9 @@
   left: 2px;
 }
 
-.milk-form__field-control:hover + .input-radio.input-radio::before {
-  position: absolute;
-  background-color: #7859CF40;
-  border-radius: 50%;
-  content: "";
-  width: 16px;
-  height: 16px;
-  left: 2px;
-  top: 2px;
-}
-
-.milk-form__field-control:hover + .input-radio {
-  border-color: #7859CF;
-}
-
-.milk-form__item:focus + .input-radio {
-  outline: solid 2px #7859CF;
-}
-
-.milk-form__field-control:disabled + .input-radio {
-  border-color: #E2E2E2;
-}
-
-.milk-form__field-control:disabled + .input-radio.input-radio::before {
-  position: absolute;
-  background-color: #E2E2E2;
-  border-radius: 50%;
-  content: "";
-  width: 16px;
-  height: 16px;
-  left: 2px;
-  top: 2px;
-}
-
-.milk-form__field-control:disabled ~ span {
-  color: #E2E2E2;
-}
-
-.country-form__control:hover + .input-checkbox {
-  outline: solid 2px #9070EC;
-  background-color: #7859CF40;
-}
-
-.country-form__control:focus-within + .input-checkbox {
-  outline: solid 2px #9070EC;
-  background-color: #7859CF40;
-}
-
-.country-form__control:disabled + .input-checkbox {
-  background-color: #E2E2E2;
-}
-
 .input[type="checkbox"]:checked:disabled + .input-checkbox::before {
   position: absolute;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
   border-radius: 50%;
   content: "";
   width: 20px;

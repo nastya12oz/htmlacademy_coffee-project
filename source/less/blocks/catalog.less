@@ -1,5 +1,5 @@
 .catalog {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 
   @media (max-width: @mobile-width-only) {
     padding-top: 50px;
@@ -40,9 +40,14 @@
   @media (min-width: @desktop-width) {
     display: flex;
   }
+
+  @media (min-width: 1650px) {
+    justify-content: space-around;
+  }
 }
 
-.catalog__title, .catalog__heading {
+.catalog__title,
+.catalog__heading {
   text-align: center;
 }
 
@@ -79,7 +84,7 @@
   background-color: transparent;
   margin-left: auto;
   text-align: center;
-  color: #7859CF;
+  color: #7859cf;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -89,7 +94,7 @@
 
   &:hover,
   &:focus {
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
     outline: none;
   }
 }

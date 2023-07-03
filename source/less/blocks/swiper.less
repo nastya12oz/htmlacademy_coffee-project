@@ -2,6 +2,8 @@
   position: absolute;
   height: 100%;
   width: 80px;
+  border: none;
+  background-color: transparent;
 
   @media (max-width: @mobile-width-only) {
     right: -30px;
@@ -20,13 +22,11 @@
   }
 
   &:hover {
-    background: rgb(255,255,255);
-    background: linear-gradient(270deg, rgba(255,255,255,1) 13%, rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {
-    background: rgb(120,89,207);
-    background: linear-gradient(270deg, rgba(120,89,207,0.25) 13%, rgba(120,89,207,0) 100%);
+    background-image: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 13%, rgba(120, 89, 207, 0) 100%);
   }
 }
 
@@ -34,6 +34,8 @@
   position: absolute;
   height: 100%;
   width: 80px;
+  border: none;
+  background-color: transparent;
 
   @media (max-width: @mobile-width-only) {
     left: -30px;
@@ -52,20 +54,19 @@
   }
 
   &:hover {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 13%, rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 13%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {
-    background: rgb(120,89,207);
-    background: radial-gradient(circle, rgba(120,89,207,0.25) 22%, rgba(120,89,207,0) 62%);
+    background-image: radial-gradient(circle, rgba(120, 89, 207, 0.25) 22%, rgba(120, 89, 207, 0) 62%);
   }
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   width: 15px;
   height: 10px;
-  color: #7859CF;
+  color: #7859cf;
   font-size: 20px;
 }
 
@@ -76,23 +77,23 @@
     display: inline-block;
     width: 62px;
     height: 4px;
-    background-color: #FFF;
+    background-color: #ffffff;
     opacity: 1;
     margin-right: 10px;
     border-radius: 4px;
 
     &:hover,
     &:focus {
-      background-color: #7859CF40;
+      background-color: #7859cf40;
       outline: none;
     }
   }
 }
 
 .swiper-pagination-bullet-active {
-  color: #fff;
-  background-color: #7859CF;
-} 
+  color: #ffffff;
+  background-color: #7859cf;
+}
 
 .swiper-slide-active {
   @media (min-width: @desktop-width) {

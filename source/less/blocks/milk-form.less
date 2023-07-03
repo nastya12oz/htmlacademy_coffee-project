@@ -1,9 +1,3 @@
-.milk-form {
-  @media (min-width: @tablet-width) {
-    margin-right: 42px;
-  }
-}
-
 .milk-form-answer {
   font-size: 16px;
   line-height: 24px;
@@ -22,6 +16,10 @@
   margin-top: 2px;
   margin-bottom: 14px;
 
+  @media (min-width: @tablet-width) {
+    margin-right: 42px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 10px;
   }
@@ -32,4 +30,42 @@
   margin: 0;
   padding: 0;
   padding-inline-start: 0;
+}
+
+.milk-form__field-control:hover + .input-radio.input-radio::before {
+  position: absolute;
+  background-color: #7859cf40;
+  border-radius: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 2px;
+}
+
+.milk-form__field-control:hover + .input-radio {
+  border-color: #7859cf;
+}
+
+.milk-form__item:focus + .input-radio {
+  outline: solid 2px #7859cf;
+}
+
+.milk-form__field-control:disabled + .input-radio {
+  border-color: #e2e2e2;
+}
+
+.milk-form__field-control:disabled + .input-radio.input-radio::before {
+  position: absolute;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 2px;
+}
+
+.milk-form__field-control:disabled ~ span {
+  color: #e2e2e2;
 }
